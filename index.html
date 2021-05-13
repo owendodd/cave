@@ -11,8 +11,108 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
+        <style>
+        	body {
+        		color: #0D8B02;
+        		font-family: helvetica,arial,sans-serif;
+        	}
+
+        	#logo {filter: invert(33%) sepia(90%) saturate(817%) hue-rotate(78deg) brightness(99%) contrast(104%);}
+
+        	#mosel-img {
+        		border-radius:70%;
+        		max-width:600px;
+        	}
+
+        	div#images {display:inline-block;width:100%;}
+        	p, img, form, h1, h2 {margin-left:10px;}
+
+        	h2 {}
+
+        	hr {
+        		background-color: #0D8B02;
+        		height:1px;
+        		border:none;
+        	}
+
+        	p {
+        		font-size:22px;
+        	}
+
+        	button {
+ 			 background-color: #0D8B02;
+			  border: none;
+			  color: white;
+			  padding: 10px 32px;
+			  text-align: center;
+			  text-decoration: none;
+			  display: inline;
+			  font-size: 16px;
+			  border-radius:20px;
+				}
+
+			* {box-sizing: border-box;}
+
+			.form-inline {  
+			  display: flex;
+			  flex-flow: row wrap;
+			  align-items: center;
+			}
+
+			.form-inline label {
+			  margin: 5px 10px 5px 0;
+			}
+
+			.form-inline input {
+			  vertical-align: middle;
+			  margin: 5px 10px 5px 0;
+			  padding: 10px;
+			  background-color: #fff;
+			  border: 1px solid #0D8B02;
+			  min-width:400px;
+			  border-radius:20px;
+			}
+
+			::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+			  color: #0D8B02;
+			  opacity: 1; /* Firefox */
+			}
+
+			@media (max-width: 800px) {
+			  .form-inline input {
+			    margin: 10px 0;
+			  }
+			  
+			  .form-inline {
+			    flex-direction: column;
+			    align-items: stretch;
+			  }
+			}
+
+        </style>
     </head>
     <body>
+    	<hr style="height:4px">
+    	<img id="logo" src="assets/cave.svg">
+    	<h2>The Natural Wine App</h2>
+    	<hr>
+    	<img id="mosel-img" src="assets/mosel.jpg">
+    	<p>
+    		Cave helps you to learn more about your favorite natural wines and discover new producers.
+    	</p>
+    	<p>
+	    	Sign up for updates on what we're building, occasional bottle recommendations, and producer highlights. 
+    	</p>
+
+		<form class="form-inline" action="/action_page.php">
+		  <input type="email" id="email" placeholder="Enter your email..." name="email">
+		  <button type="submit">Submit</button>
+		</form>
+		<br> <br >
+		<div id="images">
+			<img id="mosel-img" src="assets/savoie.jpg">
+			<img id="mosel-img" src="assets/savoie.jpg">
+		</div>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
