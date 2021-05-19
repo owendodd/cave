@@ -1,0 +1,205 @@
+@charset "UTF-8";
+/**
+ * @license
+ * MyFonts Webfont Build ID 4025585, 2021-03-10T16:56:05-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: TimesTenLT-Roman by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/times-ten/roman/
+ * Copyright: Part of the digitally encoded machine readable outline data for producing the Typefaces provided is copyrighted (c) 1988, 1990, 1993, 1995, 2003 Linotype Library GmbH, www.linotype.com. All rights reserved. This software is the property of Linotype Librar
+ * 
+ * Webfont: UniversLTPro-45Light by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/univers/pro-45-light/
+ * Copyright: Copyright &amp;#x00A9; 2014 Monotype GmbH. All rights reserved.
+ * 
+ * 
+ * 
+ * © 2021 MyFonts Inc
+*/
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/3d6cf1");
+@font-face {
+  font-family: "TimesTenLT-Roman";
+  src: url("./webfonts/TimesTenLTRoman/font.woff2") format("woff2"), url("./webfonts/TimesTenLTRoman/font.woff") format("woff");
+}
+
+body {
+  max-width: 1000px;
+  font-size: 32px;
+  line-height: 1.35em;
+  letter-spacing: 0;
+  margin: 0 auto;
+  color: #141414;
+  font-family: "TimesTenLT-Roman" 'Times New Roman', Times, serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  margin: 40px 60px 20px;
+}
+
+header img {
+  width: 140px;
+}
+
+section.globe div.image {
+  margin: 80px 0 0;
+  width: 100%;
+  height: 600px;
+  background-image: url("/assets/imgs/savoie.jpg");
+  background-size: 100%;
+  background-position: center 25%;
+  border-radius: 80%;
+  -webkit-box-shadow: 0px 0px 30px rgba(30, 30, 30, 0.4);
+          box-shadow: 0px 0px 30px rgba(30, 30, 30, 0.4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.globe div.image p {
+  margin: 30px;
+  color: yellow;
+  font-size: 24px;
+  text-shadow: 0px 0px 30px rgba(30, 30, 30, 0.4);
+}
+
+section.text {
+  margin: 20px 60px 20px;
+}
+
+#mc_embed_signup form, #mc-embedded-subscribe-form {
+  padding: 0 !important;
+  width: 100%;
+}
+
+#mc_embed_signup_scroll {
+  margin: 20px 60px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#mc_embed_signup_scroll #mce-EMAIL, #mc_embed_signup_scroll #mc-embedded-subscribe {
+  border-radius: 0;
+  margin: 0;
+  height: 70px;
+  font-size: 32px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#mc_embed_signup_scroll #mce-responses {
+  display: none;
+}
+
+#mc_embed_signup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#mc_embed_signup .button {
+  font-size: 32px !important;
+}
+
+button {
+  background-color: #0D8B02;
+  border: none;
+  color: white;
+  padding: 9px 32px 11px;
+  text-align: center;
+  text-decoration: none;
+  display: inline;
+  font-size: 16px;
+  border-radius: 20px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.form-inline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-inline label {
+  margin: 5px 10px 5px 0;
+}
+
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #0D8B02;
+  min-width: 400px;
+  border-radius: 20px;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #0D8B02;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #0D8B02;
+  opacity: 1;
+  /* Firefox */
+}
+
+::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #0D8B02;
+  opacity: 1;
+  /* Firefox */
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #0D8B02;
+  opacity: 1;
+  /* Firefox */
+}
+
+@media (max-width: 800px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+  .form-inline {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
