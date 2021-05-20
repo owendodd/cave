@@ -26,7 +26,12 @@
 @import url("//hello.myfonts.net/count/3d6cf1");
   
 @font-face {
-  font-family: "TimesTenLT-Roman";
+  font-family: "TimesTen";
   src: url('./webfonts/TimesTenLTRoman/font.woff2') format('woff2'), url('./webfonts/TimesTenLTRoman/font.woff') format('woff');
+}
+
+@font-face {
+  font-family: "BradfordMono";
+  src: url("./webfonts/BradfordMono/BradfordMonoLLWebTrial-RegularTrial.woff") format("woff");
 }
 
