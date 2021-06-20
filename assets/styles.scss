@@ -4,39 +4,36 @@
 // Variables
 
 $black: #141414;
-$shadow: 0px 0px 30px rgba(30, 30, 30, .4);
+$shadow: drop-shadow(0px 0px 30px rgba(30, 30, 30, 0.4));
 
 // Base
 
 body {
-    background-color: #fff;
-    max-width: 1000px;
-    font-size: 32px;
-    letter-spacing: 0s;
-    margin: 0 auto;
-    color: #141414;
-    font-family: "TimesTenLT-Roman" 'Times New Roman', Times, serif;
+  background-color: #fff;
+  font-size: 30px;
+  letter-spacing: 0.01em;
+  margin: 40px;
+  color: $black;
+  font-family: "TimesTenLT-Roman" "Times New Roman", Times, serif;
 }
 
 p {
-  line-height: 1.35em;
-  margin: 20px 0;
+  line-height: 1.45em;
+  margin: 0 0 30px;
 }
 
-h4 {
-  margin: 30px;
-  font-weight: normal;
-  color: yellow;
-  font-size: 24px;
-  text-shadow: $shadow;
+ol {
+  margin: 17px 0;
+  li {
+    font-family: "MonumentGroteskMono";
+    font-size: 14px;
+    margin: 10px 0;
+  }
 }
 
-h5 {
-  font-size: 20px;
-  font-weight: normal;
-  font-family: 'BradfordMono', 'Courier New', Courier, monospace;
-  margin-right: 30px;
-  letter-spacing: -0.015em;
+.caption {
+  font-size: 14px;
+  font-family: "MonumentGroteskMono";
 }
 
 a {
@@ -51,57 +48,96 @@ a {
   box-sizing: border-box;
 }
 
-
 // sections
 
-section.text, header, footer {
-  margin-left: 60px;
-  margin-right: 60px;
+section,
+header,
+footer {
+  max-width: 1400px;
+  margin: 0 auto 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 60px;
+  row-gap: 60px;
+  .img-wrap {
+    position: relative;
+    width: 100%;
+    .globe {
+      width: 100%;
+      filter: $shadow;
+      border-radius: 180px;
+    }
+    .caption {
+      position: absolute;
+      top: 20px;
+      left: 0;
+    }
+  }
+  .logo-wrap {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #logo {
+      width: 300px;
+      transform: rotate(-10deg);
+      filter: $shadow;
+    }
+    .caption {
+      position: absolute;
+      top: 20px;
+      left: 0;
+    }
+  }
 }
 
-header {
-    position: fixed;
-    z-index: -100;
-    top: 40px;
-    img {
-        width: 140px;
-    }
-}
-
-section.globe {
-    div.image {
-        margin: 80px 0 ;
-        width: 100%;
-        height: 600px;
-        background-image: url('/assets/imgs/savoie.jpg');
-        background-size: 100%;
-        background-position: center 25%;
-        border-radius: 80%;
-        box-shadow: $shadow;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-    }
+.main {
+  margin: 90px auto;
+  .caption-key {
+    grid-column: span 1;
+  }
+  .text-body {
+    grid-column: span 2;
+  }
 }
 
 
 footer {
-  margin-top: 80px;
+  margin-top: 120px;
+  position: relative;
   div {
-    display: flex;
-  }
-}
-
-
-
-
-@media (max-width: 800px) {
-  .form-inline input {
-    margin: 10px 0;
+    grid-column: span 3;
+    p {
+      margin: 2px;
+      text-align: center;
+    }
   }
   
-  .form-inline {
-    flex-direction: column;
-    align-items: stretch;
+}
+
+@media (max-width: 1000px) {
+  section,
+  header,
+  footer {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    .logo-wrap {
+      grid-column: span 2;
+      height: 300px;
+    }
+    .img-wrap {
+      grid-column: span 2;
+    }
   }
+
+  .main {
+    .caption-key {
+      grid-column: span 2;
+      grid-row: 2;
+    }
+  }
+
+
 }
