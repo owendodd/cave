@@ -55,12 +55,11 @@ a {
 section,
 header,
 footer {
-  // max-width: 1400px;
   margin: 0 auto 60px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 60px;
-  row-gap: 60px;
+  column-gap: 30px;
+  row-gap: 30px;
   .img-wrap {
     position: relative;
     width: 100%;
@@ -72,29 +71,38 @@ footer {
     .caption {
       position: absolute;
       top: 20px;
-      left: 0;
+      right: 20px;
     }
   }
+
+}
+
+header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
   .logo-wrap {
-    position: relative;
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     svg.logo {
-      width: 300px;
-      transform: rotate(-10deg);
+      width: 350px;
       filter: $shadow;
       fill: $black;
     }
-    .caption {
-      position: absolute;
-      top: 20px;
-      left: 0;
+  }
+  .header-links {
+    a {
+      text-decoration: none;
+      margin-left: 20px;
+      padding: 5px 10px;
+      border: 1px solid $black;
+      border-radius: 50px;
+      font-size: 14px;
+      font-family: "MonumentGroteskMono";
     }
   }
 }
+
 
 .main {
   margin: 60px auto;
@@ -118,21 +126,7 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  .footer-links {
-    display: flex;
-    flex-direction: row;
-    a {
-      text-decoration: none;
-      margin-right: 20px;
-      padding: 5px 10px;
-      border: 1px solid $black;
-      border-radius: 50px;
-      font-size: 14px;
-      font-family: "MonumentGroteskMono";
-    }
-  }
 }
-
 :focus-visible {
   outline: none;
   box-shadow: 0 0 10px rgba(10, 10, 10, 0.4);
