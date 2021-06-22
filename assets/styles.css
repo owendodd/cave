@@ -57,15 +57,15 @@
   font-weight: bold;
   padding: 0;
   margin: 15px 0;
-  font-size: 1.4em;
+  font-size: 18px;
 }
 
 #mc_embed_signup input {
   border: 1px solid #141414;
-  font-size: 32px;
-  font-family: "TimesTen", "Times New Roman", Times, serif;
+  font-size: 18px;
+  font-family: "MonumentGroteskMono";
   height: 80px;
-  border-radius: 10px 0 0 10px;
+  border-radius: 20px;
 }
 
 #mc_embed_signup input[type="checkbox"] {
@@ -84,20 +84,20 @@
   clear: both;
   background-color: #141414;
   border: 0 none;
-  border-radius: 0 10px 10px 0;
+  border-radius: 20px;
   -webkit-transition: all 0.23s ease-in-out 0s;
   transition: all 0.23s ease-in-out 0s;
   color: #ffffff;
   cursor: pointer;
   display: inline-block;
-  font-size: 32px;
-  font-family: "TimesTen", "Times New Roman", Times, serif;
+  font-size: 18px;
+  font-family: "MonumentGroteskMono";
   letter-spacing: 0.015em;
   font-weight: normal;
   height: 80px;
   line-height: 32px;
   margin: 0;
-  padding: 0 22px;
+  padding: 0 30px;
   text-align: center;
   text-decoration: none;
   vertical-align: top;
@@ -122,6 +122,7 @@
   position: relative;
   width: 100%;
   min-height: 50px;
+  margin: 0 20px 0 0;
 }
 
 #mc_embed_signup .size1of2 {
@@ -144,7 +145,7 @@
 #mc_embed_signup .mc-field-group input {
   display: block;
   width: 100%;
-  padding: 8px 0;
+  padding: 8px 16px;
   text-indent: 2%;
 }
 
@@ -193,7 +194,7 @@
 
 #mc_embed_signup .asterisk {
   color: #e85c41;
-  font-size: 150%;
+  font-size: 18px;
   font-weight: normal;
   position: relative;
   top: 5px;
@@ -231,7 +232,7 @@
   padding: 0;
   overflow: hidden;
   width: 100%;
-  margin: 0 60px;
+  margin: 0;
   clear: both;
 }
 
@@ -269,7 +270,7 @@
 }
 
 #mc_embed_signup #num-subscribers {
-  font-size: 1.1em;
+  font-size: 18px;
 }
 
 #mc_embed_signup #num-subscribers span {
@@ -282,11 +283,12 @@
 #mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error {
   display: inline-block;
   margin: 2px 0 1em 0;
-  padding: 5px 10px;
-  background-color: #fff;
+  padding: 5px 0;
+  background-color: transparent;
   border-radius: 3px;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: normal;
+  font-family: "MonumentGroteskMono";
   z-index: 1;
   color: #e85c41;
 }
@@ -310,15 +312,20 @@
   }
   #mc_embed_signup .button {
     width: 100%;
-    border-radius: 0 0 10px 10px;
+    height: 60px;
+    border-radius: 20px;
+    font-size: 16px;
   }
   #mc_embed_signup input {
-    border-radius: 10px 10px 0 0;
+    height: 60px;
+    border-radius: 20px;
+    font-size: 16px;
+    margin-bottom: 10px;
   }
 }
 
 body {
-  background-color: #fff;
+  background-color: #ffebdd;
   font-size: 30px;
   letter-spacing: 0.01em;
   margin: 40px;
@@ -328,7 +335,7 @@ body {
 
 p {
   line-height: 1.45em;
-  margin: 0 0 30px;
+  margin: 0 0 20px;
 }
 
 ol {
@@ -436,7 +443,7 @@ footer .logo-wrap .caption {
 }
 
 .main {
-  margin: 90px auto;
+  margin: 60px auto;
 }
 
 .main .caption-key {
@@ -446,10 +453,11 @@ footer .logo-wrap .caption {
 .main .text-body {
   grid-column: span 2;
   max-width: 28em;
+  margin-bottom: 60px;
 }
 
-.main .text-body div {
-  margin-bottom: 60px;
+.main .text-body .signup-wrapper {
+  margin: 60px 0 0;
 }
 
 footer {
@@ -480,33 +488,51 @@ footer .footer-links {
           flex-direction: row;
 }
 
-footer .footer-links .button {
+footer .footer-links a {
+  text-decoration: none;
+  margin-right: 20px;
   padding: 5px 10px;
   border: 1px solid #141414;
   border-radius: 50px;
   font-size: 14px;
   font-family: "MonumentGroteskMono";
-  margin-right: 20px;
 }
 
-footer .footer-links .button a {
-  text-decoration: none;
+:focus-visible {
+  outline: none;
+  -webkit-box-shadow: 0 0 10px rgba(10, 10, 10, 0.4);
+          box-shadow: 0 0 10px rgba(10, 10, 10, 0.4);
 }
 
 @media (max-width: 1000px) {
+  body {
+    margin: 20px;
+    font-size: 24px;
+  }
   section,
   header,
   footer {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    -webkit-column-gap: 60px;
-            column-gap: 60px;
+    -webkit-column-gap: 40px;
+            column-gap: 40px;
+    row-gap: 60px;
   }
   section .logo-wrap,
   header .logo-wrap,
   footer .logo-wrap {
     grid-column: span 2;
     height: 300px;
+  }
+  section .logo-wrap .caption,
+  header .logo-wrap .caption,
+  footer .logo-wrap .caption {
+    top: 0;
+  }
+  section .logo-wrap .logo,
+  header .logo-wrap .logo,
+  footer .logo-wrap .logo {
+    margin-top: 60px;
   }
   section .img-wrap,
   header .img-wrap,
@@ -515,8 +541,8 @@ footer .footer-links .button a {
   }
   .main .caption-key {
     grid-column: span 2;
-    -ms-grid-row: 2;
-    grid-row: 2;
+    -ms-grid-row: 5;
+    grid-row: 5;
   }
 }
 /*# sourceMappingURL=styles.css.map */

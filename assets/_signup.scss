@@ -1,10 +1,12 @@
 // Variables
 $black: #141414;
-$body: 32px;
+$body: 18px;
+$body-mobile: 16px;
 $height: 80px;
-$radii: 10px;
+$height-mobile: 60px;
+$radii: 20px;
 $bg: #fff;
-$font: 'TimesTen', 'Times New Roman', Times, serif;
+$font: 'MonumentGroteskMono';
 
 // Styles
 #mc_embed_signup form {
@@ -22,16 +24,16 @@ $font: 'TimesTen', 'Times New Roman', Times, serif;
     font-weight: bold;
     padding: 0;
     margin: 15px 0;
-    font-size: 1.4em;
+    font-size: $body;
 }
 #mc_embed_signup input {
     border: 1px solid $black;
-    font-size: 32px;
+    font-size: $body;
     font-family: $font;
     height: $height;
-    -webkit-border-radius: $radii 0 0 $radii;
-    -moz-border-radius: $radii 0 0 $radii;
-    border-radius: $radii 0 0 $radii;
+    -webkit-border-radius: $radii;
+    -moz-border-radius: $radii;
+    border-radius: $radii;
 }
 #mc_embed_signup input[type="checkbox"] {
     -webkit-appearance: checkbox;
@@ -46,9 +48,9 @@ $font: 'TimesTen', 'Times New Roman', Times, serif;
     clear: both;
     background-color: $black;
     border: 0 none;
-    -webkit-border-radius: 0 $radii $radii 0;
-    -moz-border-radius: 0 $radii $radii 0;
-    border-radius: 0 $radii $radii 0;
+    -webkit-border-radius: $radii;
+    -moz-border-radius: $radii;
+    border-radius: $radii;
     transition: all 0.23s ease-in-out 0s;
     color: #ffffff;
     cursor: pointer;
@@ -60,7 +62,7 @@ $font: 'TimesTen', 'Times New Roman', Times, serif;
     height: $height;
     line-height: 32px;
     margin: 0;
-    padding: 0 22px;
+    padding: 0 30px;
     text-align: center;
     text-decoration: none;
     vertical-align: top;
@@ -82,6 +84,7 @@ $font: 'TimesTen', 'Times New Roman', Times, serif;
     position: relative;
     width: 100%;
     min-height: 50px;
+    margin: 0 20px 0 0;
 }
 #mc_embed_signup .size1of2 {
     clear: none;
@@ -99,7 +102,7 @@ $font: 'TimesTen', 'Times New Roman', Times, serif;
 #mc_embed_signup .mc-field-group input {
     display: block;
     width: 100%;
-    padding: 8px 0;
+    padding: 8px 16px;
     text-indent: 2%;
 }
 #mc_embed_signup .mc-field-group select {
@@ -142,7 +145,7 @@ $font: 'TimesTen', 'Times New Roman', Times, serif;
 }
 #mc_embed_signup .asterisk {
     color: #e85c41;
-    font-size: 150%;
+    font-size: $body;
     font-weight: normal;
     position: relative;
     top: 5px;
@@ -176,11 +179,10 @@ $font: 'TimesTen', 'Times New Roman', Times, serif;
     padding: 0;
     overflow: hidden;
     width: 100%;
-    margin: 0 60px;
+    margin: 0;
     clear: both;
 }
 #mc_embed_signup div.response {
-    // margin: 1em 0;
     font-weight: normal;
     float: left;
     top: -1.5em;
@@ -210,7 +212,7 @@ $font: 'TimesTen', 'Times New Roman', Times, serif;
     margin: 1em 0 1em 5%;
 }
 #mc_embed_signup #num-subscribers {
-    font-size: 1.1em;
+    font-size: $body;
 }
 #mc_embed_signup #num-subscribers span {
     padding: 0.5em;
@@ -222,13 +224,14 @@ $font: 'TimesTen', 'Times New Roman', Times, serif;
 #mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error {
     display: inline-block;
     margin: 2px 0 1em 0;
-    padding: 5px 10px;
-    background-color: $bg;
+    padding: 5px 0;
+    background-color: transparent;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: normal;
+    font-family: $font;
     z-index: 1;
     color: #e85c41;
 }
@@ -236,7 +239,11 @@ $font: 'TimesTen', 'Times New Roman', Times, serif;
     border: 1px solid #e85c41;
 }
 
+
+
+
 @media (max-width: 800px) {
+
     .form-inline input {
       margin: 10px 0;
     }
@@ -247,13 +254,19 @@ $font: 'TimesTen', 'Times New Roman', Times, serif;
     }
     #mc_embed_signup .button {
         width: 100%;
-        -webkit-border-radius: 0 0 $radii $radii;
-        -moz-border-radius: 0 0 $radii $radii;
-        border-radius: 0 0 $radii $radii;
+        height: $height-mobile; 
+        -webkit-border-radius: $radii;
+        -moz-border-radius: $radii;
+        border-radius: $radii;
+        font-size: $body-mobile;
+
     }
     #mc_embed_signup input {
-        -webkit-border-radius: $radii $radii 0 0;
-        -moz-border-radius: $radii $radii 0 0;
-        border-radius: $radii $radii 0 0;
+        height: $height-mobile;
+        -webkit-border-radius: $radii;
+        -moz-border-radius: $radii;
+        border-radius: $radii;
+        font-size: $body-mobile;
+        margin-bottom: 10px;
     }
   }
