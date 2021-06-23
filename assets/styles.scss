@@ -55,6 +55,7 @@ header {
       margin-top: 20px;
       width: 450px;
       fill: $black;
+      transform: rotate(-10deg);
     }
   }
   .header-links {
@@ -170,7 +171,7 @@ footer {
       margin: 0 20px 0 0;
     }
     .logo {
-      margin-bottom: 30px;
+      margin-bottom: 90px;
     }
     
   }
