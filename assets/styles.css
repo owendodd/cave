@@ -393,6 +393,8 @@ header .logo-wrap svg.logo {
   margin-top: 20px;
   width: 450px;
   fill: #8A521E;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
 }
 
 header .header-links {
@@ -525,7 +527,7 @@ footer .copyright {
     margin: 0 20px 0 0;
   }
   header .logo {
-    margin-bottom: 30px;
+    margin-bottom: 90px;
   }
   .main .caption-key {
     grid-column: span 2;
