@@ -53,6 +53,7 @@ header {
   .logo-wrap {
     svg.logo {
       margin-top: 20px;
+      max-width: 80vw;
       width: 450px;
       fill: $black;
       transform: rotate(-10deg);
@@ -90,7 +91,7 @@ section.banner {
     .caption {
       position: absolute;
       top: 10%;
-      left: 10%;
+      left: 0;
     }
   }
 

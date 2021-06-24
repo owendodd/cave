@@ -391,6 +391,7 @@ header {
 
 header .logo-wrap svg.logo {
   margin-top: 20px;
+  max-width: 80vw;
   width: 450px;
   fill: #8A521E;
   -webkit-transform: rotate(-10deg);
@@ -439,7 +440,7 @@ section.banner .img-wrap .globe {
 section.banner .img-wrap .caption {
   position: absolute;
   top: 10%;
-  left: 10%;
+  left: 0;
 }
 
 .main {
