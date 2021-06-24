@@ -10,7 +10,7 @@ $shadow: drop-shadow(0px 0px 30px #8a521e8a);
 
 body {
   background-color: #fff;
-  font-size: 32px;
+  font-size: 36px;
   letter-spacing: -0.02em;
   margin: 30px;
   color: $black;
@@ -25,7 +25,7 @@ p {
 
 
 p.caption {
-  font-size: 14px;
+  font-size: 16px;
   font-family: "MonumentGroteskMono";
   margin-bottom: 5px;
 }
@@ -46,27 +46,35 @@ a {
 
 header {
   position: relative;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
   .logo-wrap {
     svg.logo {
-      margin-top: 20px;
-      width: 450px;
+      margin: 0 90px 30px 0;
+      max-width: 80vw;
+      width: 30vw;
       fill: $black;
       transform: rotate(-10deg);
+    }
+    svg.wine {
+      width: 40vw;
+      max-width: 90vw;
     }
   }
   .header-links {
     display: flex;
     a {
       text-decoration: none;
+      text-align: center;
       margin-left: 20px;
-      padding: 5px 10px;
-      border: 1px solid $black;
+      padding: 6px 14px;
+      color: white;
+      background-color: $black;
       border-radius: 50px;
-      font-size: 14px;
+      font-size: 16px;
       font-family: "MonumentGroteskMono";
     }
   }
@@ -74,7 +82,7 @@ header {
 
 
 section.banner {
-  margin: 120px 0;
+  margin: 60px 0;
   max-width: 2000px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -90,7 +98,7 @@ section.banner {
     .caption {
       position: absolute;
       top: 10%;
-      left: 10%;
+      left: 0;
     }
   }
 
@@ -100,7 +108,7 @@ section.banner {
 
 
 .main {
-  margin: 60px auto;
+  margin: 90px auto;
   .text-body {
     grid-column: span 2;
     max-width: 32em;
@@ -114,7 +122,7 @@ section.banner {
 footer {
   border-top: 1px solid $black;
   padding-top: 20px;
-  margin-top: 120px;
+  margin-top: 60px;
   position: relative;
   max-width: 2000px;
   display: grid;
@@ -134,7 +142,7 @@ footer {
       justify-content: start;
       li {
         font-family: "MonumentGroteskMono";
-        font-size: 14px;
+        font-size: 16px;
         margin: 0 0 10px;
       }
     }
@@ -150,7 +158,19 @@ footer {
   box-shadow: 0 0 10px rgba(10, 10, 10, 0.4);
 }
 
-
+@media (max-width: 1380px) {
+  header {
+    .logo-wrap {
+      svg.logo {
+        margin: 30px 30px 30px 0;
+        width: 25vw;
+      }
+      svg.wine {
+        width: 30vw;
+      }
+    }
+  }
+}
 
 @media (max-width: 1000px) {
   body {
@@ -162,7 +182,6 @@ footer {
     grid-template-columns: 1fr;
     column-gap: 40px;
     row-gap: 60px;
-    
   }
 
   header {
@@ -170,9 +189,16 @@ footer {
     .header-links a {
       margin: 0 20px 0 0;
     }
-    .logo {
-      margin-bottom: 90px;
+    .logo-wrap {
+      svg.logo {
+        margin: 30px 90px 30px 0;
+        width: 70vw;
+      }
+      svg.wine {
+        width: 80vw;
+      }
     }
+    
     
   }
 
