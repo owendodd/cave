@@ -391,7 +391,7 @@ header {
 }
 
 header .logo-wrap svg.logo {
-  margin: 0 90px 30px 0;
+  margin: 10px 40px 30px 0;
   max-width: 80vw;
   width: 30vw;
   fill: #3D513E;
@@ -406,9 +406,9 @@ header .logo-wrap svg.wine {
 }
 
 header .header-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 header .header-links a {
@@ -515,16 +515,6 @@ footer .copyright {
           box-shadow: 0 0 10px rgba(10, 10, 10, 0.4);
 }
 
-@media (max-width: 1380px) {
-  header .logo-wrap svg.logo {
-    margin: 30px 30px 30px 0;
-    width: 25vw;
-  }
-  header .logo-wrap svg.wine {
-    width: 30vw;
-  }
-}
-
 @media (max-width: 1000px) {
   body {
     margin: 20px;
@@ -543,8 +533,12 @@ footer .copyright {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  header .header-links {
+    position: relative;
+  }
   header .header-links a {
     margin: 0 20px 0 0;
+    position: relative;
   }
   header .logo-wrap svg.logo {
     margin: 30px 90px 30px 0;
