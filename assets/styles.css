@@ -64,6 +64,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 800px;
   margin: 20px 0 20px;
 }
 
