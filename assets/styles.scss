@@ -4,7 +4,7 @@
 // Variables
 
 $black: #3D513E;
-$shadow: drop-shadow(0px 0px 30px #3d513e81);
+$shadow: inset 0px 0px 30px #3D513E;
 
 // Base
 
@@ -85,26 +85,54 @@ header {
 
 
 section.banner {
-  margin: 60px 0;
+  margin: 20px 0 0;
   max-width: 2000px;
-  display: grid;
+  display: flex;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 30px;
+  // column-gap: 20px;
+  // row-gap: 20px;
   .img-wrap {
+    flex-grow: 1;
+    margin: 20px;
+    flex-basis: 0;
     position: relative;
     width: 100%;
+    transition: all 400ms ease-in-out;
+    &:hover {
+      flex-grow: 1.2;
+      cursor: pointer;
+    }
     .globe {
       width: 100%;
-      filter: $shadow;
+      height: 400px;
       border-radius: 100%;
+      box-shadow: $shadow;
+      background-size: cover;
+      &.one {
+        background-image: url(/assets/imgs/image-01.png);
+      }
+      &.two {
+        background-image: url(/assets/imgs/image-02.png);
+      }
+      &.three {
+        background-image: url(/assets/imgs/image-03.png);
+      }
+      &.four {
+        background-image: url(/assets/imgs/image-04.png);
+      }
+      &.five {
+        background-image: url(/assets/imgs/image-05.png);
+      }
+      &.six {
+        background-image: url(/assets/imgs/image-06.png);
+      }
     }
     .caption {
       position: absolute;
       top: 10%;
-      left: 0;
+      left: 10%;
     }
   }
-
 }
 
 
