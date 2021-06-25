@@ -340,7 +340,7 @@
 }
 
 body {
-  background-color: #fff;
+  background-color: #FFFCF9;
   font-size: 36px;
   letter-spacing: -0.02em;
   margin: 30px;
@@ -432,6 +432,9 @@ section.banner {
   display: flex;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  row-gap: 20px;
 }
 
 section.banner .img-wrap {
@@ -460,7 +463,9 @@ section.banner .img-wrap .globe {
   border-radius: 100%;
   -webkit-box-shadow: inset 0px 0px 30px #3D513E;
           box-shadow: inset 0px 0px 30px #3D513E;
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
 }
 
 section.banner .img-wrap .globe.one {

@@ -9,7 +9,7 @@ $shadow: inset 0px 0px 30px #3D513E;
 // Base
 
 body {
-  background-color: #fff;
+  background-color: #FFFCF9;
   font-size: 36px;
   letter-spacing: -0.02em;
   margin: 30px;
@@ -89,8 +89,8 @@ section.banner {
   max-width: 2000px;
   display: flex;
   grid-template-columns: 1fr 1fr 1fr;
-  // column-gap: 20px;
-  // row-gap: 20px;
+  column-gap: 20px;
+  row-gap: 20px;
   .img-wrap {
     flex-grow: 1;
     margin: 20px;
@@ -107,7 +107,9 @@ section.banner {
       height: 400px;
       border-radius: 100%;
       box-shadow: $shadow;
+      background-repeat: no-repeat;
       background-size: cover;
+      background-position: center center;
       &.one {
         background-image: url(/assets/imgs/image-01.png);
       }
