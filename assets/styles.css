@@ -442,8 +442,8 @@ section.banner .img-wrap {
 
 section.banner .img-wrap .globe {
   width: 100%;
-  -webkit-filter: drop-shadow(0px 0px 30px #8a521e8a);
-          filter: drop-shadow(0px 0px 30px #8a521e8a);
+  -webkit-filter: drop-shadow(0px 0px 30px #3d513e81);
+          filter: drop-shadow(0px 0px 30px #3d513e81);
   border-radius: 100%;
 }
 
