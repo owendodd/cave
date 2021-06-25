@@ -75,7 +75,7 @@
 }
 
 #mc_embed_signup input {
-  border: 1px solid #8A521E;
+  border: 1px solid #3D513E;
   font-size: 18px;
   font-family: "MonumentGroteskMono";
   height: 80px;
@@ -96,7 +96,7 @@
 
 #mc_embed_signup .button {
   clear: both;
-  background-color: #8A521E;
+  background-color: #3D513E;
   border: 0 none;
   border-radius: 20px;
   -webkit-transition: all 0.23s ease-in-out 0s;
@@ -263,7 +263,7 @@
 }
 
 #mc_embed_signup #mce-success-response {
-  color: #8A521E;
+  color: #3D513E;
   display: none;
 }
 
@@ -343,7 +343,7 @@ body {
   font-size: 36px;
   letter-spacing: -0.02em;
   margin: 30px;
-  color: #8A521E;
+  color: #3D513E;
   font-family: "Times Seven", "Times New Roman", Times, serif;
 }
 
@@ -359,7 +359,7 @@ p.caption {
 }
 
 a {
-  color: #8A521E;
+  color: #3D513E;
   text-decoration: underline;
 }
 
@@ -394,14 +394,15 @@ header .logo-wrap svg.logo {
   margin: 0 90px 30px 0;
   max-width: 80vw;
   width: 30vw;
-  fill: #8A521E;
-  -webkit-transform: rotate(-10deg);
-          transform: rotate(-10deg);
+  fill: #3D513E;
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
 }
 
 header .logo-wrap svg.wine {
   width: 40vw;
   max-width: 90vw;
+  fill: #3D513E;
 }
 
 header .header-links {
@@ -416,7 +417,7 @@ header .header-links a {
   margin-left: 20px;
   padding: 6px 14px;
   color: white;
-  background-color: #8A521E;
+  background-color: #3D513E;
   border-radius: 50px;
   font-size: 16px;
   font-family: "MonumentGroteskMono";
@@ -466,7 +467,7 @@ section.banner .img-wrap .caption {
 }
 
 footer {
-  border-top: 1px solid #8A521E;
+  border-top: 1px solid #3D513E;
   padding-top: 20px;
   margin-top: 60px;
   position: relative;

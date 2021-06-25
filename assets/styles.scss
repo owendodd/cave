@@ -57,11 +57,12 @@ header {
       max-width: 80vw;
       width: 30vw;
       fill: $black;
-      transform: rotate(-10deg);
+      transform: rotate(-5deg);
     }
     svg.wine {
       width: 40vw;
       max-width: 90vw;
+      fill: $black;
     }
   }
   .header-links {
