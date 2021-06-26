@@ -1,12 +1,12 @@
 // Variables
 $black: #3D513E;
-$body: 18px;
+$body: 32px;
 $body-mobile: 16px;
-$height: 80px;
+$height: 100px;
 $height-mobile: 60px;
-$radii: 20px;
+$radii: 60px;
 $bg: #fff;
-$font: 'MonumentGroteskMono';
+$font: "Times Seven", "Times New Roman", Times, serif;
 
 // Styles
 #mc_embed_signup form {
@@ -18,7 +18,7 @@ $font: 'MonumentGroteskMono';
 }
 #mc_embed_signup_scroll {
     display: flex;
-    max-width: 800px;
+    // max-width: 900px;
     margin: 20px 0 20px;
 }
 #mc_embed_signup h2 {
@@ -28,7 +28,7 @@ $font: 'MonumentGroteskMono';
     font-size: $body;
 }
 #mc_embed_signup input {
-    border: 1px solid $black;
+    border: 2px solid $black;
     font-size: $body;
     font-family: $font;
     height: $height;
@@ -63,7 +63,7 @@ $font: 'MonumentGroteskMono';
     height: $height;
     line-height: 32px;
     margin: 0;
-    padding: 0 30px;
+    padding: 0 60px;
     text-align: center;
     text-decoration: none;
     vertical-align: top;
