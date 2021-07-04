@@ -459,9 +459,7 @@ section.banner .img-wrap .globe {
   border-radius: 100%;
   -webkit-box-shadow: inset 0px 0px 30px #3D513E;
           box-shadow: inset 0px 0px 30px #3D513E;
-  background-repeat: no-repeat;
-  background-size: 120%;
-  background-position: center center;
+  background-size: cover;
 }
 
 section.banner .img-wrap .globe.one {
@@ -496,6 +494,10 @@ section.banner .img-wrap .caption {
 
 .main {
   margin: 90px auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
 }
 
 .main .text-body {

@@ -105,9 +105,7 @@ section.banner {
       height: 400px;
       border-radius: 100%;
       box-shadow: $shadow;
-      background-repeat: no-repeat;
-      background-size: 120%;
-      background-position: center center;
+      background-size: cover;
       &.one {
         background-image: url(/assets/imgs/image-01.png);
       }
@@ -140,6 +138,8 @@ section.banner {
 
 .main {
   margin: 90px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   .text-body {
     grid-column: span 2;
     max-width: 25em;
